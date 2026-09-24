@@ -1,0 +1,5 @@
+# Never commit real visitor data or local files.
+data/
+__pycache__/
+*.pyc
+.DS_Store

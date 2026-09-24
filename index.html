@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="HandsOn Automation helps learners stop collecting courses and start building real machines with the One-Build Sprint." />
+  <!-- Adds the "js" class before the stylesheet loads. All entrance-animation
+       CSS is gated on html.js, so the page is fully readable without JS. -->
+  <script>document.documentElement.classList.add("js");</script>
+  <title>HandsOn Automation — Stop collecting courses. Start building machines.</title>
+
+  <!-- Launch polish: the page never shows a bare browser tab. The favicon is a
+       real inline SVG (data: URI — no binary asset, no pip dependency), and the
+       theme-color paints the mobile browser chrome in our slate-ink so the hero
+       and navbar feel like one continuous surface, not a white disconnect. -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230F172A'/%3E%3Cpath d='M9 21h14M9 17h9M9 13h6' stroke='%2322D3EE' stroke-width='2.5' stroke-linecap='round' fill='none'/%3E%3Ccircle cx='23' cy='13' r='3.5' fill='%237C3AED'/%3E%3C/svg%3E" />
+  <meta name="theme-color" content="#0F172A" />
+
+  <!-- Open Graph + Twitter card: what people see when the link is shared.
+       The og:image is parked as an
+       honest park, not a made-up placeholder — there is no real screenshot yet,
+       and faking a card would break our no-fabricated-card
+       rule. This no-fabricated-card means exactly that: a real screenshot
+       belongs on the founder's hard drive on launch day (see the note in
+       checks.py), not invented in this file. -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="HandsOn Automation — Stop collecting courses. Start building machines." />
+  <meta property="og:description" content="OneBuild Sprint: 5 steps · 1 week · one machine you can show. That's the whole deal — no more courses on the shelf." />
+  <meta property="og:url" content="https://graphcloud-sphereamber-3000.codio.io/" />
+  <meta property="og:site_name" content="HandsOn Automation" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="HandsOn Automation — Stop collecting courses. Start building machines." />
+  <meta name="twitter:description" content="OneBuild Sprint: 5 steps · 1 week · one machine you can show. That's the whole deal." />
+
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <a class="skip" href="#hero">Skip to content</a>
+
+  <noscript>
+    <p class="noscript-note">
+      JavaScript is off — every section below is still readable, and the
+      sign-up form still works. Turn JavaScript on to see the entrance animations.
+    </p>
+  </noscript>
+
+  <!-- ============ Navbar ============ -->
+  <header id="navbar">
+    <nav class="navbar-inner" aria-label="Main navigation">
+      <a href="#hero" class="nav-logo">
+        <span class="logo-mark" aria-hidden="true">&#9900;</span>
+        <span>HandsOn <em>Automation</em></span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#problem">Problem</a></li>
+        <li><a href="#solution">Solution</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#gallery">Builds</a></li>
+        <li><a href="#social-proof">Proof</a></li>
+      </ul>
+      <a href="#cta" class="btn btn-primary btn-sm">Start Your First Build</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ============ Hero ============ -->
+    <section id="hero">
+      <div class="hero-inner wrap">
+        <div class="hero-copy">
+          <span class="mono-pill">ONE BUILD &middot; ONE WEEK &middot; ONE FINISHED MACHINE</span>
+          <h1>Stop collecting courses. Start building machines.</h1>
+          <p class="lede">
+            The One-Build Sprint ships your first finished project in about a week —
+            a 5-step checklist, a real deadline, and a coach by your side.
+          </p>
+          <div class="hero-actions">
+            <a href="#cta" class="btn btn-primary btn-lg">Start Your First Build</a>
+            <a href="#solution" class="btn btn-secondary">See how it works</a>
+          </div>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+          <div class="hero-panel">
+            <div class="panel-head">
+              <span class="mono">BUILD 04 &middot; HMI PANEL</span>
+              <span class="panel-status mono">LIVE</span>
+            </div>
+            <div class="panel-title">One-Build Sprint</div>
+            <div class="task done"><span class="mono">01</span><span>Pick your build</span><span>&#10003;</span></div>
+            <div class="task done"><span class="mono">02</span><span>Wire the rig</span><span>&#10003;</span></div>
+            <div class="task active"><span class="mono">03</span><span>Follow the checklist</span><span class="blink">&#9632;</span></div>
+            <div class="task"><span class="mono">04</span><span>Ship it</span><span>&#9675;</span></div>
+            <div class="progress">
+              <div class="progress-label mono">RIG COMPLETE: 68%</div>
+              <div class="bar"><div class="fill"></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Problem ============ -->
+    <section id="problem">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="mono-pill">THE PROBLEM</span>
+          <h2>The course trap: a dozen certificates, zero finished machines.</h2>
+        </div>
+        <div class="problem-grid">
+          <article class="card reveal">
+            <span class="card-num mono">01</span>
+            <h3>Courses, but no projects</h3>
+            <p>You finish course after course but never build a real project.</p>
+          </article>
+          <article class="card reveal">
+            <span class="card-num mono">02</span>
+            <h3>No proof, no confidence</h3>
+            <p>No project means no proof, no confidence, no promotion.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Solution ============ -->
+    <section id="solution">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="mono-pill">THE SOLUTION</span>
+          <h2>The One-Build Sprint — your first finished project, in about a week.</h2>
+          <p>One build at a time. No more endless courses — just one real machine.</p>
+        </div>
+        <div class="steps-grid">
+          <article class="step reveal">
+            <span class="step-num mono">01</span>
+            <h3>Pick a build</h3>
+            <p>Pick one small build from the project lab.</p>
+          </article>
+          <article class="step reveal">
+            <span class="step-num mono">02</span>
+            <h3>Follow your checklist</h3>
+            <p>Follow your checklist to a real deadline while a coach keeps you moving.</p>
+          </article>
+          <article class="step reveal">
+            <span class="step-num mono">03</span>
+            <h3>Solve real troubleshooting drills</h3>
+            <p>Deliberately broken rigs train the diagnosis skill every interview checks.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Features ============ -->
+    <section id="features">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="mono-pill">FEATURES</span>
+          <h2>Everything you need to actually finish.</h2>
+        </div>
+        <div class="feature-grid">
+          <article class="card feature reveal">
+            <h3>Guided 5-step build checklists</h3>
+            <p>Every build lays out wiring, parts, and milestones in five clear steps. No guesswork.</p>
+          </article>
+          <article class="card feature reveal">
+            <h3>Real deadlines that beat procrastination</h3>
+            <p>A fixed ship date turns "someday" into this week — momentum you can feel.</p>
+          </article>
+          <article class="card feature reveal">
+            <h3>Troubleshooting drills</h3>
+            <p>Deliberately broken rigs train the diagnosis skill that interviews actually check.</p>
+          </article>
+          <article class="card feature reveal">
+            <h3>Progress badges for every finished machine</h3>
+            <p>A visible record of builds shipped — proof you can show, not another certificate.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Project Gallery ============ -->
+    <section id="gallery">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="mono-pill">PROJECT GALLERY</span>
+          <h2>Sample builds you can actually finish.</h2>
+        </div>
+        <div class="gallery-grid">
+          <article class="card gallery-card reveal">
+            <span class="card-num mono">BUILD 01</span>
+            <h3>PLC &harr; Ignition mini rig</h3>
+            <p>A micro-PLC wired to a live Ignition screen &mdash; ladder logic and HMI on a rig you can touch.</p>
+          </article>
+          <article class="card gallery-card reveal">
+            <span class="card-num mono">BUILD 02</span>
+            <h3>Vision inspection station</h3>
+            <p>A camera checks parts against a pass/fail rule and lights the verdict.</p>
+          </article>
+          <article class="card gallery-card reveal">
+            <span class="card-num mono">BUILD 03</span>
+            <h3>Sensor bench</h3>
+            <p>Temperature, pressure, and proximity sensors feeding one live dashboard.</p>
+          </article>
+          <article class="card gallery-card reveal">
+            <span class="card-num mono">BUILD 04</span>
+            <h3>Drone log station</h3>
+            <p>A ground station that logs flight telemetry and flags out-of-range readings.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Social Proof ============ -->
+    <section id="social-proof">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="mono-pill">SOCIAL PROOF</span>
+          <h2>People finish here.</h2>
+        </div>
+        <figure class="quote reveal">
+          <blockquote>
+            "One tiny build, one real deadline, one finished machine. That's the whole deal &mdash; no more courses on the shelf."
+          </blockquote>
+          <figcaption>&mdash; The HandsOn Automation promise</figcaption>
+        </figure>
+        <div class="metric mono-pill">One-Build Sprint: 5 steps &middot; 1 week &middot; 1 machine you can show</div>
+      </div>
+    </section>
+
+    <!-- ============ CTA ============ -->
+    <section id="cta">
+      <div class="wrap cta-box">
+        <h2>Your first finished build is one click away.</h2>
+        <p>Join the One-Build Sprint — no more courses, just one real project.</p>
+        <form id="sprint-form" class="sprint-form" action="/signup" method="post" novalidate>
+          <label class="sr-only" for="email">Email address</label>
+          <input type="email" id="email" name="email" placeholder="you@machineworks.com" required />
+          <button type="submit" class="btn btn-primary btn-lg">Start Your First Build</button>
+        </form>
+        <p id="form-error" class="form-error" role="status" aria-live="polite" hidden></p>
+        <p id="form-success" class="form-success" role="status" aria-live="polite" hidden>
+          You're on the list. We'll email your first build plan when the One-Build Sprint opens.
+        </p>
+        <p class="cta-box-privacy">
+          We'll use your email only to send your One-Build Sprint plan. No spam &mdash; and you can leave the list anytime.
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ Footer ============ -->
+  <footer id="footer">
+    <div class="wrap footer-inner">
+      <p>&copy; 2026 HandsOn Automation</p>
+      <nav aria-label="Footer navigation">
+        <a href="#problem">Problem</a>
+        <a href="#solution">Solution</a>
+        <a href="#features">Features</a>
+        <a href="#cta" class="btn btn-ghost btn-sm">Start Your First Build</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
